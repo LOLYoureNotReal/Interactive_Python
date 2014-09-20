@@ -1,0 +1,15 @@
+# Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight). 
+# If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm). 
+# Write a Python program to solve the general version of the above problem. 
+# Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm. 
+# Your program should output what the time will be on the clock when the alarm goes off.
+
+hours_in_day = 24
+print("What time is it?")
+current_time_string = input()
+current_time_int = int(current_time_string)
+print("How many hours from now?")
+alarm_set_string = input()
+alarm_set_int = int(alarm_set_string)
+wake_up_time = current_time_int + alarm_set_int % hours_in_day
+print("The alarm will go off at: ", wake_up_time)
