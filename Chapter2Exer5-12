@@ -1,0 +1,106 @@
+# Make the sentence: All work and no play makes Jack a dull boy. 
+# Store each word in a separate variable, then print out the sentence on one line using print.
+##################################################################################################### 
+
+# Exercise 5
+# Variable Initialization:
+
+a = "All"
+b = "work"
+c = "and"
+d = "no" 
+e = "play" 
+f = "makes"
+g = "Jack"
+i = "a"
+j = "dull"
+k = "boy."
+
+# Printing values
+print(a, b, c, d, e, f, g, i, j, k)
+
+
+# Add parenthesis to the expression 6 * 1 - 2 to change its value from 4 to -6.
+##################################################################################################### 
+
+# Exercise 6
+
+prin(6 * (1 - 2))
+
+
+# Write a Python program that assigns the principal amount of 10000 to variable P, 
+# assign to n the value 12, and assign to r the interest rate of 8% (0.08). 
+# Then have the program prompt the user for the number of years, t, that the money will be compounded for. 
+# Calculate and print the final amount after t years.
+##################################################################################################### 
+
+# Exercise 7
+
+p = 10000
+n = 12
+r = 0.08
+t_str = input("t, years")
+t = int(t_str)
+
+final_amount = p *(1 + r / n) ** (n * t)
+print(final_amount)
+
+# Write a program that will compute the area of a circle. 
+# Prompt the user to enter the radius and print a nice message back to the user with the answer.
+
+# Exercise 8
+
+r_str = input("Enter radius: ")
+r = float(r_str)
+PI = 3.14159
+area = PI * r ** 2
+print("The area is: ", area)
+
+# Write a program that will compute the area of a rectangle. 
+# Prompt the user to enter the width and height of the rectangle. 
+# Print a nice message with the answer.
+# Exercise 9
+
+width_str = input("Enter width: ")
+width = int(width_str)
+length_str = input("Enter Length: ")
+length = int(length_str)
+area = width * length
+
+print("The area is: ", area)
+
+# Write a program that will compute MPG for a car. 
+# Prompt the user to enter the number of miles driven and the number of gallons used. 
+# Print a nice message with the answer
+#########################################################################################
+# Exercise 10
+
+miles_driven_str = input("Enter number of miles driven: ")
+miles_driven = float(miles_driven_str)
+gallons_used_str = input("Enter number of gallons used: ")
+gallons_used = float(gallons_used_str)
+
+mpg = miles_driven / gallons_used
+
+print("You car used: ", mpg, "miles per gallon")
+
+# Write a program that will convert degrees celsius to degrees fahrenheit.
+############################################################################################
+# Exercise 11
+
+deg_c = int(input("What is the temperature in Celsius? "))
+
+# formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
+deg_f = deg_c * (9 / 5) + 32
+
+print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
+
+# Write a program that will convert degrees fahrenheit to degrees celsius.
+############################################################################################
+# Exercise 12
+
+deg_f = int(input("What is the temp in Farh?"))
+
+deg_c = (deg_f - 32) * 5 / 9
+print("Degree Celcius is: ", deg_c)
+
