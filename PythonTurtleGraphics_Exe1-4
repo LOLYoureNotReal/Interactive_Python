@@ -1,0 +1,32 @@
+# Write a program that prints We like Python's turtles! 1000 times.
+# Exercise 1
+
+for i in range(1000):
+    print("We like Python's turtles")
+
+for i in ["January", "February", "March"]:
+    print("One of the months of the year is", i)
+
+
+# Write a program that uses a for loop to print
+  #  One of the months of the year is January
+  #  One of the months of the year is February
+  #  One of the months of the year is March
+  #  etc ...
+# Exercise 3
+
+for i in ["January", "February", "March"]:
+    print("One of the months of the year is", i)
+
+# Assume you have a list of numbers 12, 10, 32, 3, 66, 17, 42, 99, 20
+  #  Write a loop that prints each of the numbers on a new line.
+  #  Write a loop that prints each number and its square on a new line.
+# Exercise 4
+
+for i in range(12, 21):
+    print(i)
+
+for i in range(12, 21):
+    print(i, i ** 2);
+
+
